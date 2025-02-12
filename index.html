@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study MBBS Abroad - Find the best programs and universities worldwide">
+    <title>Study MBBS Abroad</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4 text-center text-xl font-bold">Study MBBS Abroad</header>
+    
+    <section class="p-6 text-center bg-cover bg-center" style="background-image: url('banner.jpg');">
+        <h1 class="text-3xl font-bold text-white" >Apply Now for MBBS Abroad</h1>
+        <button class="mt-4 bg-yellow-500 text-white py-2 px-4 rounded">Get Started</button>
+    </section>
+    
+    <section class="p-6 text-center">
+        <h2 class="text-2xl font-semibold">Why Study MBBS Abroad?</h2>
+        <p class="text-center text-gray-700 mt-2">Affordable tuition, world-class education, and global career opportunities.</p>
+    </section>
+    
+    <section class="p-6 text-center">
+        <h2 class="text-2xl font-semibold">Top Destinations</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div class="p-4 bg-white shadow rounded">Russia</div>
+            <div class="p-4 bg-white shadow rounded">Uzbekistan</div>
+            <div class="p-4 bg-white shadow rounded">Kazakhstan</div>
+            <div class="p-4 bg-white shadow rounded">Philippines</div>
+            <div class="p-4 bg-white shadow rounded">Georgia</div>
+            <div class="p-4 bg-white shadow rounded">Kyrgyzstan</div>
+            <div class="p-4 bg-white shadow rounded">Egypt</div>
+        </div>
+    </section>
+    
+    <section class="p-6">
+        <h2 class="text-2xl font-semibold text-center">Admission Process & Eligibility</h2>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+            <li>Check eligibility criteria</li>
+            <li>Choose a country and university</li>
+            <li>Submit required documents</li>
+            <li>Receive admission confirmation</li>
+            <li>Apply for a student visa</li>
+        </ul>
+    </section>
+    
+    <section class="p-6 bg-blue-100">
+        <h2 class="text-2xl font-semibold text-center">Get in Touch</h2>
+        <form id="leadForm" class="max-w-md mx-auto bg-white p-6 shadow rounded mt-4">
+            <label class="block mb-2">Name:</label>
+            <input type="text" id="name" class="w-full p-2 border rounded" required>
+            
+            <label class="block mt-4 mb-2">Email:</label>
+            <input type="email" id="email" class="w-full p-2 border rounded" required>
+            
+            <label class="block mt-4 mb-2">Phone:</label>
+            <input type="tel" id="phone" class="w-full p-2 border rounded" required>
+            
+            <label class="block mt-4 mb-2">Preferred Country:</label>
+            <select id="country" class="w-full p-2 border rounded" required>
+                <option value="">Select Country</option>
+                <option value="Russia">Russia</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Egypt">Egypt</option>
+            </select>
+            
+            <button type="submit" class="mt-4 w-full bg-blue-600 text-white p-2 rounded">Submit</button>
+        </form>
+    </section>
+    
+    <footer class="text-center p-4 bg-gray-800 text-white mt-6">&copy; 2025 Study MBBS Abroad. All rights reserved.</footer>
+    
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+        });
+    </script>
+</body>
+</html>
